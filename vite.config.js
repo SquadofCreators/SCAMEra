@@ -8,5 +8,6 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: 'https://SquadofCreators.github.io/scam-era-v1/',
 
 })
