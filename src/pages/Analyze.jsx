@@ -71,6 +71,13 @@ function Analyze() {
     analyzeVideo(uploadedFile);
   };
 
+  // Analyze another video
+  const handleAnalyzeAnotherVideo = () => {
+    setUploadedFile(null);
+    setIsAnalyzed(false);
+    setResultData(null);
+  };
+
   // Download file name should be the 'analysis_report' + date + time + file type (.csv, .pdf, .txt)
   const date = new Date();
   const time = date.toLocaleTimeString();
@@ -220,6 +227,10 @@ function Analyze() {
               Download PDF
             </button>
           </div>
+
+          <button onClick={handleAnalyzeAnotherVideo} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Analyze Another Video
+          </button>
         </section>
       )}
 
