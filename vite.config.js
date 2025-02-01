@@ -8,6 +8,6 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/scam-era-v1',
+  base: '/SCAMEra',
 
 })
