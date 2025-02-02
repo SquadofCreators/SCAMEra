@@ -48,7 +48,7 @@ function Analyze() {
       const formData = new FormData();
       formData.append('video', file);
 
-      const response = await fetch('http://127.0.0.1:5000/predict', {
+      const response = await fetch('http://192.168.209.246:5000/predict', {
         method: 'POST',
         body: formData,
       });
